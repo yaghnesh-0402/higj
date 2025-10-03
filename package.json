@@ -1,7 +1,8 @@
 {
-      "name": "Gem and Jewellery Institute Website (Copy) (Copy)",
+      "name": "gem-and-jewellery-institute-website-final",
       "version": "0.1.0",
       "private": true,
+      "homepage": "https://yaghnesh-0402.github.io/freelance/",
       "dependencies": {
             "@radix-ui/react-accordion": "^1.2.3",
             "@radix-ui/react-alert-dialog": "^1.1.6",
@@ -55,6 +56,8 @@
             "vite": "^6.3.6"
       },
       "scripts": {
+            "predeploy": "npm run build",
+            "deploy": "gh-pages -d dist",
             "dev": "vite",
             "build": "vite build"
       }
