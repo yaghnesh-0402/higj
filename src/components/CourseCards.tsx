@@ -1,14 +1,14 @@
 import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import gemologyImg from "../assets/Gemologycourse.jpg";
-import diamondsImg from "../assets/diamondgrading course.jpg";
-import designingImg from "../assets/jewellery design.jpg";
-import lapidaryImg from "../assets/lapid.jpg";
+import gemologyImg from "../assets/gemology.jpg";
+import diamondsImg from "../assets/advancediamondgrading.jpg";
+import designingImg from "../assets/jewellerydesigning.jpg";
+import lapidaryImg from "../assets/lapidary.jpg";
 import crashGemologyImg from "../assets/gemologycrash.jpg";
 import crashDiamondImg from "../assets/diamondcrash.jpg";
 import metalImg from "../assets/preciousmetal.jpg";
-import assortingImg from "../assets/diamonassort.jpg";
+import assortingImg from "../assets/diamondassorting.jpg";
 import workshopsImg from "../assets/workshop.jpg";
 
 export default function CourseCards() {
@@ -34,7 +34,7 @@ export default function CourseCards() {
       title: "Jewellery Designing",
       description: " Learn to create stunning jewelry designs, covering everything from traditional drawing techniques and shading to using modern software and understanding market trends.",
       duration: "16 Weeks",
-      topics: ["Introduction of Gemstones", "Construction of Stones", "Drawing & Shading of Gem Stones", "Rendering, Painting of Gems","Shading of Metal","Design Development","Techniques of Linking","Different types of Setting","Casting Methods","International Market Trends","Estimation","Orthographic View"],
+      topics: ["Introduction of Gemstones", "Construction of Stones", "Drawing & Shading of Gem Stones", "Rendering, Painting of Gems","Shading of Metal","Design Development","Techniques of Linking","Different types of Setting","Casting Methods","International Market Trends","Estimation",],
       image: designingImg
     },
     {
@@ -56,7 +56,7 @@ export default function CourseCards() {
     {
       id: 6,
       title: "Diamond Crash Course",
-      description: "A quick, intensive program to learn the 4C's of diamonds, how to identify them, and estimate their weight in finished jewelry.sional course covering jewelry appraisal techniques, documentation, and certification processes.",
+      description: "A quick, intensive program to learn the 4C's of diamonds, how to identify them, and estimate their weight in finished jewelry. Professional course covering jewelry appraisal techniques, documentation, and certification processes.",
       duration: "4 Weeks",
       topics: ["Introduction to Diamond", "Properties of Diamond", "4 C's", "Identification of Diamonds" ,"Weight Estimation of Studded Jewellery"],
       image: crashDiamondImg
@@ -72,7 +72,7 @@ export default function CourseCards() {
     {
       id: 8,
       title: "Diamond Assorting",
-      description: "Develop skills in sorting and grading diamonds based on the 4C's (color, cut, clarity, and carat) and estimating their weight in set jewelryrofessional course covering jewelry appraisal techniques, documentation, and certification processes.",
+      description: "Develop skills in sorting and grading diamonds based on the 4C's (color, cut, clarity, and carat) and estimating their weight in set jewelry professional course covering jewelry appraisal techniques, documentation, and certification processes.",
       duration: "4 Weeks",
       topics: ["Colour Grading", "Cut Grading", "Clarity Grading", "Weight estimation in Studded Jewellery"],
       image: assortingImg

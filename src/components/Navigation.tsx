@@ -2,14 +2,18 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import higjLogo from '../assets/higjtoplogo.jpg';
+import higjtoplogo from "../assets/higjtoplogo.jpg";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      const homeSection = document.getElementById("home");
+      if (homeSection) {
+        const homeSectionHeight = homeSection.offsetHeight;
+        setIsScrolled(window.scrollY > homeSectionHeight - 100);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -27,19 +31,19 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-sm shadow-md"
-          : "bg-transparent"
+          ? "bg-white/95 backdrop-blur-sm shadow-md opacity-100 translate-y-0"
+          : "bg-transparent opacity-0 -translate-y-full pointer-events-none"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <img 
-              src={higjLogo} 
-              alt="HIGJ Logo" 
-              style={{ width: "56px", height: "56px" }}
-              className="mr-3 rounded-full object-cover" 
+               <img
+              src={higjtoplogo}
+              alt="HIGJ Logo"
+              className="h-16 w-16 rounded-full object-cover mr-3 shadow-md"
             />
+
             <h1 className={`text-xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>HIGJ</h1>
           </div>
 
@@ -47,28 +51,28 @@ export default function Navigation() {
             <Button
               variant="ghost"
               onClick={() => scrollToSection("home")}
-              className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-900'}`}
+              className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'}`}
             >
               Home
             </Button>
             <Button
               variant="ghost"
               onClick={() => scrollToSection("about")}
-              className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-900'}`}
+              className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'}`}
             >
               About Us
             </Button>
             <Button
               variant="ghost"
               onClick={() => scrollToSection("courses")}
-              className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-900'}`}
+              className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'}`}
             >
               Courses
             </Button>
             <Button
               variant="ghost"
               onClick={() => scrollToSection("contact")}
-              className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-900'}`}
+              className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'}`}
             >
               Contact Us
             </Button>
