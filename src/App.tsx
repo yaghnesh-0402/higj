@@ -176,7 +176,7 @@ export default function App() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Contact Us</h2>
             <p className="text-xl text-gray-600">
-              Get in touch with us for admissions, inquiries, or more information
+              Get in touch with us for admissions, enquiries, or more information
             </p>
           </div>
 
@@ -215,6 +215,7 @@ export default function App() {
                       <h4 className="font-semibold mb-1">Phone</h4>
                       <p className="text-gray-600">040-23242077</p>
                       <p className="text-gray-600">040-66834400</p>
+                      <p className="text-gray-600">+91 7032784928</p>
                     </div>
                   </div>
                   
@@ -281,13 +282,14 @@ export default function App() {
               <div className="space-y-2 text-gray-400">
                 <p>Gunfoundry, Hyderabad</p>
                 <p>040 - 23242077</p>
+                <p>+91 7032784928</p>
                 <p>higj.edu97@gmail.com</p>
               </div>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; Hyderabad Institute of Gem and Jewellery. All rights reserved.</p>
+            <p>&copy; Hyderabad Institute of Gem and Jewellery Pvt. Ltd. All rights reserved.</p>
           </div>
         </div>
       </footer>
