@@ -81,7 +81,7 @@ export default function CourseCards() {
       id: 9,
       title: "Workshops",
       description: "We conduct Workshops for large Groups intended for Jewellers, Sales Persons, Lapidarists, Gemologists, karigars, Jewellery Designers, Individuals and Beginners in Jewellery trade",
-      duration: "4 Weeks",
+      duration: "Variable",
       topics: ["Introduction to Diamond", "Properties of Diamond", "4 C's", "Identification of Diamonds" ,"Weight Estimation of Studded Jewellery"],
       image: workshopsImg
     },
