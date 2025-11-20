@@ -5,7 +5,7 @@ import CourseCards from "./components/CourseCards";
 import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
-import { Mail, Phone, MapPin, Gem, GraduationCap,ExternalLink } from "lucide-react";
+import { Mail, Phone, MapPin, Gem, GraduationCap,ArrowRight } from "lucide-react";
 import higjLogo from './assets/higjlogo.jpg';
 import aboutuss from './assets/aboutus.jpg';
 
@@ -49,7 +49,7 @@ export default function App() {
       </div>
     </div>
             {/* Navigation Buttons Section */}
-          <div className="px-2">
+          <div className="px-">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-lg">Explore Our Institute</h3>
@@ -189,25 +189,36 @@ export default function App() {
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <MapPin className="w-6 h-6 text-blue-600 mt-1" />
+
                     <div>
                       <h4 className="font-semibold mb-1">
-                           <a
-                            href="https://maps.app.goo.gl/YZ8BTazUh1nbuEUz5"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-1 text-blue-600 hover:underline"
-                          >
-                            Address
+                        <a
+                          href="https://maps.app.goo.gl/YZ8BTazUh1nbuEUz5"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-1 text-blue-600 hover:underline"
+                        >
+                          Address
+                        </a>
+                      </h4>
 
-                            
-                          </a>
-                        </h4>
                       <p className="text-gray-600">
                         Pavani Kamal Complex, 305, 3rd Floor,<br />
                         Lane Opp. S.B.I. Gunfoundry, Hyderabad, Telangana - 500001<br />
                         India
                       </p>
-                    </div>
+
+                      {/* Directions Button */}
+                      <a
+                        href="https://maps.app.goo.gl/YZ8BTazUh1nbuEUz5"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 mt-2 px-3 py-1.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                      >
+                        Directions
+                        <ArrowRight className="w-4 h-4" />
+                      </a>
+                    </div>  
                   </div>
                   
                   <div className="flex items-center gap-4">
