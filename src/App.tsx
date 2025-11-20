@@ -7,6 +7,7 @@ import { Card, CardContent } from "./components/ui/card";
 import { ImageWithFallback } from "./components/figma/ImageWithFallback";
 import { Mail, Phone, MapPin, Gem, GraduationCap,ExternalLink } from "lucide-react";
 import higjLogo from './assets/higjlogo.jpg';
+import aboutuss from './assets/aboutus.jpg';
 
 export default function App() {
   const scrollToSection = (id: string) => {
@@ -32,7 +33,7 @@ export default function App() {
                  Hyderabad Institute of Gem & Jewellery Pvt. Ltd.
         </h1>
 
-        <div className="flex justify-center mb-30">
+        <div className="flex justify-center mb-30 pt-6 ">
           <img 
             src={higjLogo}
             alt="Institute logo" 
@@ -48,7 +49,7 @@ export default function App() {
       </div>
     </div>
             {/* Navigation Buttons Section */}
-          <div className="pt-4 pb-10">
+          <div className="px-2">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-white mb-2 drop-shadow-lg">Explore Our Institute</h3>
@@ -59,12 +60,12 @@ export default function App() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto px-8 py-6 border-2 border-white text-blue-900 hover:bg-white hover:text-blue-900 transition-all duration-300 group"
+                  className=" pointer w-full sm:w-auto px-8 py-6 border-2 border-white text-blue-900 hover:bg-white hover:text-blue-900 transition-all duration-300 group"
                   onClick={() => scrollToSection("about")}
                 >
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-white/20 group-hover:bg-blue-100 flex items-center justify-center transition-colors">
-                      <Gem className="w-4 h-4 text-blue-900 group-hover:text-blue-900" />
+                      <Gem className="pointer w-4 h-4 text-blue-900 group-hover:text-blue-900" />
                     </div>
                     <div className="text-left text-blue-900 group-hover:text-blue-900">
                       <div className="font-semibold">About Us</div>
@@ -75,7 +76,7 @@ export default function App() {
 
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto px-8 py-6 bg-white text-blue-900 hover:bg-gray-100 transition-all duration-300 group"
+                  className="pointer w-full sm:w-auto px-8 py-6 bg-white text-blue-900 hover:bg-gray-100 transition-all duration-300 group"
                   onClick={() => scrollToSection("courses")}
                 >
                   <div className="flex items-center gap-3">
@@ -92,7 +93,7 @@ export default function App() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto px-8 py-6 border-2 border-white text-white hover:bg-white hover:text-blue-900 transition-all duration-300 group"
+                  className="pointer w-full sm:w-auto px-8 py-6 border-2 border-white text-white hover:bg-white hover:text-blue-900 transition-all duration-300 group"
                   onClick={() => scrollToSection("contact")}
                 >
                   <div className="flex items-center gap-3">
@@ -129,7 +130,7 @@ export default function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=400&fit=crop"
+                src={aboutuss}
                 alt="Institute Building"
                 className="rounded-lg shadow-lg"
               />

@@ -5,10 +5,10 @@ import gemologyImg from "../assets/gemology.jpg";
 import diamondsImg from "../assets/advancediamondgrading.jpg";
 import designingImg from "../assets/jewellerydesigning.jpg";
 import lapidaryImg from "../assets/lapidary.jpg";
-import crashGemologyImg from "../assets/gemologycrash.jpg";
+import crashGemologyImg from "../assets/gemcrash.jpg";
 import crashDiamondImg from "../assets/diamondcrash.jpg";
 import metalImg from "../assets/preciousmetal.jpg";
-import assortingImg from "../assets/diamondassorting.jpg";
+import assortingImg from "../assets/diassort.jpg";
 import workshopsImg from "../assets/workshop.jpg";
 
 export default function CourseCards() {

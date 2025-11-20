@@ -51,28 +51,28 @@ export default function Navigation() {
             <Button
               variant="ghost"
               onClick={() => scrollToSection("home")}
-              className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'}`}
+              className={`${isScrolled ? 'text-gray-700 pointer hover:text-blue-600' : 'text-white pointer hover:text-blue-200'}`}
             >
               Home
             </Button>
             <Button
               variant="ghost"
               onClick={() => scrollToSection("about")}
-              className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'}`}
+              className={`${isScrolled ? 'text-gray-700 pointer hover:text-blue-600' : 'text-white pointer hover:text-blue-200'}`}
             >
               About Us
             </Button>
             <Button
               variant="ghost"
               onClick={() => scrollToSection("courses")}
-              className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'}`}
+              className={`${isScrolled ? 'text-gray-700 pointer hover:text-blue-600' : 'text-white pointer hover:text-blue-200'}`}
             >
               Courses
             </Button>
             <Button
               variant="ghost"
               onClick={() => scrollToSection("contact")}
-              className={`${isScrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'}`}
+              className={`${isScrolled ? 'text-gray-700 pointer hover:text-blue-600' : 'text-white pointer hover:text-blue-200'}`}
             >
               Contact Us
             </Button>
